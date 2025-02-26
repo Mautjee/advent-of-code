@@ -19,9 +19,14 @@ endif()
 
 # Add include directory
 include_directories(${PROJECT_SOURCE_DIR}/include)
+include_directories(${PROJECT_SOURCE_DIR}/days)
 
 # Add executable
-add_executable(${PROJECT_NAME} src/main.cpp)
+add_executable(${PROJECT_NAME}
+  src/main.cpp
+  src/days/1/solver.cpp
+  src/days/2/solver.cpp
+)
 
 # Add any libraries if needed
 # target_link_libraries(${PROJECT_NAME} PRIVATE some_library)
